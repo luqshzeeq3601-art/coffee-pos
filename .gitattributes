@@ -1,0 +1,26 @@
+* text=auto eol=lf
+
+# Keep common source and configuration files normalized.
+*.cs text
+*.csproj text
+*.json text
+*.md text
+*.ps1 text
+*.sh text
+*.sql text
+*.ts text
+*.tsx text
+*.yml text
+*.yaml text
+
+# Do not attempt text normalization for binary assets.
+*.gif binary
+*.ico binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.png binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+

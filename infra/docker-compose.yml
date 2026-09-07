@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    # Disposable local-only service; trust authentication is never a production setting.
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-coffee_pos_dev}
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d ${POSTGRES_DB:-coffee_pos_dev}"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "127.0.0.1:${REDIS_PORT:-6379}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5

@@ -1,0 +1,73 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE and editor state
+.idea/
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Agent, Tooling & Scratch folders
+.agents/
+.codex/
+.playwright-cli/
+graphify-out/
+output/
+design dashboard_img/
+.work/
+
+# JavaScript / TypeScript outputs and dependencies
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.turbo/
+.parcel-cache/
+
+# .NET outputs and local tooling
+**/bin/
+**/obj/
+.dotnet/
+
+# Python / Machine Learning / Large Binaries
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+*.onnx
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pfx
+*.snk
+*.pem
+*.key
+
+# Local databases & persistent volume data
+docker-data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Test and runtime artifacts
+TestResults/
+*.log
+*.tmp
+

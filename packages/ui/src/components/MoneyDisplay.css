@@ -1,0 +1,44 @@
+.rl-money {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-feature-settings: 'tnum' 1;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--color-char);
+  white-space: nowrap;
+}
+
+.rl-money--sm {
+  font-size: 0.875rem;
+}
+
+.rl-money--md {
+  font-size: 1.125rem;
+}
+
+.rl-money--lg {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rl-money--hero {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.rl-money__currency {
+  font-size: 0.75em;
+  opacity: 0.85;
+  font-weight: 500;
+}
+
+.rl-money__decimal {
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+
+.rl-money--negative {
+  color: var(--color-coffee-cherry);
+}

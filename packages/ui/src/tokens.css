@@ -1,0 +1,58 @@
+:root {
+  /* Roast Ledger Color Palette */
+  --color-char: #1C2220;
+  --color-porcelain: #F3F6F4;
+  --color-bottle-green: #246B58;
+  --color-bottle-green-hover: #1B5243;
+  --color-roast-amber: #D88A2D;
+  --color-roast-amber-hover: #B87220;
+  --color-coffee-cherry: #B6404B;
+  --color-coffee-cherry-hover: #98333D;
+  --color-steam-blue: #DDE9E7;
+  --color-steam-blue-dark: #C5D7D4;
+  --color-surface-white: #FFFFFF;
+  --color-border-muted: #D9E2DE;
+  --color-border-strong: #A8B8B2;
+  --color-text-muted: #5C6A66;
+
+  /* Typography Stacks */
+  --font-heading: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Spacing Scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* Tactile Radii */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+
+  /* Touch Target Minimums */
+  --touch-target-min: 44px;
+  --touch-target-pos: 48px;
+
+  /* Shadows (Restrained & Functional) */
+  --shadow-subtle: 0 1px 3px rgba(28, 34, 32, 0.08);
+  --shadow-chit: 0 2px 6px rgba(28, 34, 32, 0.12);
+  --shadow-modal: 0 12px 32px rgba(28, 34, 32, 0.24);
+
+  /* Transitions */
+  --transition-fast: 160ms ease-out;
+  --transition-normal: 240ms ease-out;
+  --focus-ring: 0 0 0 3px rgba(36, 107, 88, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms !important;
+    --transition-normal: 0ms !important;
+  }
+}

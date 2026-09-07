@@ -1,0 +1,108 @@
+.rl-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(28, 34, 32, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  animation: rl-fade-in var(--transition-fast);
+}
+
+.rl-modal {
+  background-color: var(--color-surface-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-muted);
+  box-shadow: var(--shadow-modal);
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: rl-scale-up var(--transition-fast);
+}
+
+.rl-modal--sm {
+  max-width: 360px;
+}
+
+.rl-modal--md {
+  max-width: 520px;
+}
+
+.rl-modal--lg {
+  max-width: 720px;
+}
+
+.rl-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  border-bottom: 1px solid var(--color-border-muted);
+  background-color: var(--color-porcelain);
+}
+
+.rl-modal__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-char);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rl-modal__close {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: var(--space-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+}
+
+.rl-modal__close-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.rl-modal__close:hover {
+  color: var(--color-char);
+  background-color: var(--color-border-muted);
+}
+
+.rl-modal__content {
+  padding: var(--space-6);
+  overflow-y: auto;
+  font-family: var(--font-body);
+}
+
+.rl-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-border-muted);
+  background-color: var(--color-porcelain);
+}
+
+@keyframes rl-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes rl-scale-up {
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

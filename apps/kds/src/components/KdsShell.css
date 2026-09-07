@@ -1,0 +1,137 @@
+.rl-kds-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-porcelain);
+  font-family: var(--font-body);
+  color: var(--color-char);
+}
+
+/* 1. Top Control Bar */
+.rl-kds-topbar {
+  height: 68px;
+  background-color: var(--color-char);
+  color: var(--color-surface-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  user-select: none;
+}
+
+.rl-kds-topbar__brand-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.rl-kds-topbar__logo {
+  font-size: 2rem;
+}
+
+.rl-kds-topbar__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.rl-kds-topbar__location {
+  font-size: 0.75rem;
+  color: var(--color-steam-blue);
+  font-weight: 500;
+}
+
+.rl-kds-stations {
+  display: flex;
+  gap: var(--space-2);
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 4px;
+  border-radius: var(--radius-sm);
+}
+
+.rl-kds-station-btn {
+  padding: var(--space-2) var(--space-4);
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.rl-kds-station-btn:hover {
+  color: var(--color-surface-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rl-kds-station-btn--active {
+  background-color: var(--color-bottle-green);
+  color: var(--color-surface-white);
+}
+
+.rl-kds-topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.rl-kds-queues {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.rl-kds-queue-btn {
+  padding: var(--space-2) var(--space-3);
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.rl-kds-queue-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-surface-white);
+}
+
+.rl-kds-queue-btn--active {
+  background-color: var(--color-steam-blue);
+  color: var(--color-char);
+}
+
+/* 2. Main Order Rail Grid */
+.rl-kds-main {
+  flex: 1;
+  padding: var(--space-6);
+  overflow-x: auto;
+  overflow-y: auto;
+  display: flex;
+}
+
+.rl-kds-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  align-items: flex-start;
+  width: 100%;
+}
+
+.rl-kds-empty-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

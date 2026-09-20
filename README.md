@@ -1,5 +1,7 @@
 # Roast Ledger — Specialty Coffee POS & ERP Platform
 
+> **Project Status:** 🚧 **In Progress — not yet complete.** Active development and validation are ongoing.
+
 <p align="center">
   <img src="docs/assets/screenshots/pos-register.png" alt="Roast Ledger POS Register" width="850" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);" />
 </p>

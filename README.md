@@ -22,6 +22,17 @@
 
 ---
 
+## Outcomes
+
+> In progress: these outcomes describe the current build and will gain measured results at release.
+
+- Structured a .NET 9 modular monolith with 4 domain modules (sales, inventory, tenancy and staff RBAC, MyInvois) serving 3 React 18 apps: POS register, kitchen display, and back-office admin.
+- Integrated LHDN MyInvois e-invoicing through a background .NET worker that generates, signs, and submits consolidated invoices with QR verification for Malaysian tax compliance.
+- Modeled recipe-based stock depletion to gram and millilitre precision per beverage across multiple outlets, alongside split bills over 4 payment methods (cash, card, DuitNow QR, e-wallets).
+- Enforced monorepo architecture boundaries with a boundary-check script and strict TypeScript type-checking across all workspaces, sharing typed API contracts and UI tokens through 2 packages.
+
+---
+
 ## System Architecture
 
 ```mermaid
@@ -40,7 +51,7 @@ flowchart TB
     subgraph BackendTier["Backend Services (.NET 9)"]
         API["CoffeePos.ApiHost<br/>(Modular Monolith HTTP API)"]
         WORKER["CoffeePos.Worker<br/>(Durable Background Jobs)"]
-        
+
         subgraph CoreModules["Domain & Application Modules"]
             SALES["Sales & Orders"]
             INVENTORY["Inventory & Batches"]
